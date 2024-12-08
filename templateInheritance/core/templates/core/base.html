@@ -12,22 +12,17 @@
 <body>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Django Course</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="{% url 'aboutus' %}">About</a></li>
+            <li><a href="/cor/learndj">Django Course</a></li>
+            <li><a href="{% url 'courseone' %}">Django Course1</a></li>
+
         </ul>
     </nav>
     {% block content %}{% endblock content %}
     <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button>
-<i class="fa-solid fa-house"></i>
 <i class="fa-brands fa-facebook"></i>
 
 

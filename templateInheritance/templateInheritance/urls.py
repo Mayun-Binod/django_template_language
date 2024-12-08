@@ -24,6 +24,6 @@ admin.site.index_title = "Welcome to Binod Researcher Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home),
-    path('about/',views.about),
+    path('about/',views.about,name="aboutus"),
     path('cor/',include('course.urls')),
 ]
