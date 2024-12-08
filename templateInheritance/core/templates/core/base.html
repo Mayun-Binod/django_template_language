@@ -10,16 +10,7 @@
     {% block corecss %}<link rel="stylesheet" href="{% static 'core/css/core.css' %}">{% endblock corecss %}
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="{% url 'aboutus' %}">About</a></li>
-            <li><a href="/cor/learndj">Django Course</a></li>
-            <li><a href="{% url 'courseone' %}">Django Course1</a></li>
-
-        </ul>
-    </nav>
+    {% include "core/navbar.html" %}
     {% block content %}{% endblock content %}
     <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
